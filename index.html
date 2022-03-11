@@ -1,0 +1,57 @@
+<head>
+    <link rel="stylesheet" href="mainStyle.css" <script
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+    <header>
+        <h1 id="title">Geospatial Career Survey</h1>
+    </header>
+</head>
+
+
+<body>
+    <div id="main">
+        <p id="description">Tell us about your experience in GIS</p>
+        <form id="survey-form">
+            <!-- Name entry -->
+            <label for="name" id="name-label">What is your name?</label><br>
+            <input required name="name" id="name" type="text" placeholder="Enter your name."><br>
+            <!-- Email entry -->
+            <label for="email" id="email-label">Enter your email:</label><br>
+            <input required name="email" id="email" type="email" placeholder="Your email"><br>
+            <!-- Age entry  -->
+            <label for="number" id="number-label">How old are you?</label><br>
+            <input name="age" id="number" type="number" placeholder="Age" min="1" max="99"><br>
+            <!-- Role entry  -->
+            <label for="roleSelect">Describe your role.</label><br>
+            <select id="dropdown" placeholder="Role" name="roleSelect"><br>
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+            </select><br>
+            <!--Recommendation Fieldset-->
+            <fieldset>
+                <legend>Would you recommend GIS as a career?</legend><br>
+                <input id="recommend1" type="radio" name="recommend" value="yes">
+                <label for="recommend1">Yes</label><br>
+                <input id="recommend2" type="radio" name="recommend" value="maybe">
+                <label for="recommend2">Maybe</label><br>
+                <input id="recommend3" type="radio" name="recommend" value="no">
+                <label for="recommend3">No</label><br>
+            </fieldset>
+            <!-- Technologies Form -->
+            <label>What technologies do you use?</label><br>
+            <input type="checkbox" value="GIS" name="GIS">
+            <label for="GIS">GIS</label><br>
+            <input type="checkbox" value="Autodesk" name="Autodesk">
+            <label for="Autodesk">Autodesk</label><br>
+            <!-- Feedback form -->
+            <label for="feedback">Do you have any comments?</label><br>
+            <textarea name="feedback" placeholder="Additional comments"></textarea><br>
+            <!-- Submit button  -->
+            <button id="submit">
+                <p>Submit</p>
+            </button>
+        </form>
+
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
