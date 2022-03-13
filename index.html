@@ -27,6 +27,8 @@
             <select id="dropdown" placeholder="Role" name="roleSelect"><br>
                 <option value="student">Student</option>
                 <option value="employee">Employee</option>
+                <option value="salesperson">Salesperson</option>
+                <option value="hobbyist">Hobbyist</option>
             </select><br>
             <!--Recommendation Fieldset-->
             <fieldset id="recommendationFields">
@@ -42,10 +44,15 @@
             <label>What technologies do you use?</label><br>
             <div id="radiobtnOpts">
                 <input type="checkbox" value="GIS" name="GIS">
-                <label for="GIS">GIS</label><br>
+                <label for="ArcGIS">GIS</label><br>
                 <input type="checkbox" value="Autodesk" name="Autodesk">
                 <label for="Autodesk">Autodesk</label><br>
-            </div>
+                <input type='checkbox' value='arcPy' name='ArcPy'>
+                <label for='ArcPy'>ArcPy</label><br>
+                <input type='checkbox' value='qgis' name='QGIS'>
+                <label for='QGIS'>QGIS</label><br>
+                <input type='checkbox' value='wab' name='WebAppBuilder'>
+                <label for='WebAppBuilder'>Web App Builder</label><br>            </div>
             <!-- Feedback form -->
             <label for="feedback">Do you have any comments?</label><br>
             <textarea name="feedback" placeholder="Additional comments"></textarea><br>
