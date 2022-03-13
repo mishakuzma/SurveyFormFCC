@@ -11,6 +11,10 @@ h1 {
     font-family: Lobster;
 }
 
+p {
+    font-style: italic;
+}
+
 #main {
     background-color: var(--mainColor, rgb(205, 243, 252));
     filter: brightness(120%);
@@ -27,16 +31,24 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#survey-form label {
+#survey-form label, legend {
     top: 10px;
     font-style: italic;
     font-weight: bold;
+}
+
+#recommendationFields label {
+    font-style: normal;
+    font-weight: normal;
 }
 
 button {
     position: relative;
     width: 100%;
     top: 1em;
+    border: none;
+    text-decoration: none;
+    background-color: green;
 }
 
 button:hover {
@@ -46,6 +58,9 @@ button:hover {
     /* animation-fill-mode: forwards; */
 }
 
+button:active {
+    transform: scale(0.99)
+}
 @keyframes rotateBut {
     100% {
         transform: rotate(-45deg)
