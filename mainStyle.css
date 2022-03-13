@@ -15,6 +15,11 @@ p {
     font-style: italic;
 }
 
+input, select, textarea {
+    border-radius: 5%;
+    border: none
+}
+
 #main {
     background-color: var(--mainColor, rgb(205, 243, 252));
     filter: brightness(120%);
@@ -37,7 +42,7 @@ p {
     font-weight: bold;
 }
 
-#recommendationFields label {
+#recommendationFields label, #radiobtnOpts label {
     font-style: normal;
     font-weight: normal;
 }
